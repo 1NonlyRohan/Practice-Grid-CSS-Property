@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice of CSS Grid</title>
+
+    <style>
+        .head {
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            align-items: center;
+            align-content: center;
+            background-color: #6c8ae6;
+            padding: 10px;
+            gap: 20px 50px;
+            /* grid-template-columns: 80px 80px 200px 80px; */
+            grid-template-rows: 80px 80px 80px 80px;
+            justify-content: space-evenly;
+            justify-items: stretch;
+        }
+
+        .grid-item {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3rem;
+            grid-column: 1 / span 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="head">
+        <h1>
+            Practice of Grid CSS Property.
+        </h1>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+    </main>
+</body>
+
+</html>
